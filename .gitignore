@@ -1,4 +1,4 @@
-.archive/ - удалить потом
+.archive/
 archive/
 
 .pytest*
