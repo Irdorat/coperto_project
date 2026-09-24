@@ -1,0 +1,16 @@
+.archive/ - удалить потом
+archive/
+
+.pytest*
+.pytest_cache/
+*/__pycache__
+__pycache__/
+
+.venv/
+venv/
+env/
+
+.vscode/
+.idea/
+
+models/
