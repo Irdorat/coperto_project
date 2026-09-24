@@ -124,7 +124,7 @@ Forecast from: 2026-10-01
 | 2024-01-07 | x | 7 |
 
 ### Полный последовательный запуск
-
+```bash
 source .venv/bin/activate
 
 python -m pytest -v
@@ -142,6 +142,7 @@ docker build \
 
 docker run --rm \
   restaurant-forecast:latest
+```
 
 ### Повторное обучение
 
