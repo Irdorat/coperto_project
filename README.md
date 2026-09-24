@@ -123,6 +123,26 @@ Forecast from: 2026-10-01
 | 2024-01-06 | x | 6 |
 | 2024-01-07 | x | 7 |
 
+### Полный последовательный запуск
+
+source .venv/bin/activate
+
+python -m pytest -v
+
+python train.py
+
+python predict.py \
+  --date 2026-10-01 \
+  --restaurant 1
+
+docker build \
+  --no-cache \
+  -t restaurant-forecast:latest \
+  .
+
+docker run --rm \
+  restaurant-forecast:latest
+
 ### Повторное обучение
 
 Модель автоматически обучается во время сборки Docker-образа.
